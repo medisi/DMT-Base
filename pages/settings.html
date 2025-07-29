@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMT Base | Settings</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/color_scheme.css">
+</head>
+<body class="light orange">
+    <div class="main">
+        <div class="sidebar">
+            <div class="resize-handle"></div>
+            
+            <a href="../index.html" class="sidebar-logo">
+                <div class="sidebar-logo-image">
+                    <div class="sidebar-logo-image-item">
+                        <div class="sidebar-logo-image-item-nosquare"></div>
+                    </div>
+                    <div class="sidebar-logo-image-item">
+                        <div class="sidebar-logo-image-item-line"></div>
+                    </div>
+                    <div class="sidebar-logo-image-item">
+                        <div class="sidebar-logo-image-item-square"></div>
+                    </div>
+                </div>
+                <div class="sidebar-logo-text">DMT<br>Base</div>
+            </a>
+        
+            <div class="sidebar_settings-title">Настройки</div>
+
+            <div class="sidebar_settings-menu">
+                <div class="sidebar_settings-menu-item" id="sidebar_settings-profile">
+                    <img src="../icons/user.png" alt="">
+                    <span>Профиль</span>
+                </div>
+                <div class="sidebar_settings-menu-item" id="sidebar_settings-personalization">
+                    <img src="../icons/personalization.png" alt="">
+                    <span>Персонализация</span>
+                </div>
+                <div class="sidebar_settings-menu-item" id="sidebar_settings-table">
+                    <img src="../icons/table.png" alt="">
+                    <span>Таблица</span>
+                </div>
+                <div class="sidebar_settings-menu-item" id="sidebar_settings-security">
+                    <img src="../icons/security.png" alt="">
+                    <span>Безопасность</span>
+                </div>
+                <div class="sidebar_settings-menu-item" id="sidebar_settings-support">
+                    <img src="../icons/support.png" alt="">
+                    <span>Поддержка</span>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="btn-quit">
+            <img src="../icons/quit.png" alt="">
+        </button>
+
+        <div class="settings_container">
+            <div class="settings_container-header">
+                <div>
+                    <span>Настройки</span>
+                    <span>—</span>
+                    <span class="name_settings"></span>
+                </div>
+                <button class="save-settings" id="savePersonalization">Применить</button>
+            </div>
+            <div class="settings_container-content profile" id="setting-profile">
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Основные данные</div>
+
+                    <div class="setting-profile-cards">
+                        <div class="setting-profile-card">
+                            <div class="setting-profile-card-title">ФИО</div>
+                            <div class="setting-profile-card-text">Surname Name</div>
+                        </div>
+                        <div class="setting-profile-card">
+                            <div class="setting-profile-card-title">Наименование организации</div>
+                            <div class="setting-profile-card-text">Name company</div>
+                        </div>
+                        <div class="setting-profile-card">
+                            <div class="setting-profile-card-title">Контактный номер телефона</div>
+                            <div class="setting-profile-card-text">+7 777 777-77-77</div>
+                        </div>
+                        <div class="setting-profile-card">
+                            <div class="setting-profile-card-title">Электронная почта</div>
+                            <div class="setting-profile-card-text">address@email.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Изображение</div>
+
+                    <div class="setting-profile-image">
+                        <div class="setting-profile-image-image">
+                            <img src="../images/user.png" alt="" />
+                        </div>
+                        <button>изменить</button>
+                    </div>
+                </div>
+
+                <button id="settigs-btn-quit">
+                    Выйти
+                </button>
+            </div>
+
+            <div class="settings_container-content personalization " id="setting-personalization">
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Оформление</div>
+                    <div class="setting-item-cards">
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/theme.png" alt="" />
+                                </div>
+                                <span>Тема</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <select id="theme-app">
+                                    <option value="light">Светлая</option>
+                                    <option value="dark">Тёмная</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/color.png" alt="" />
+                                </div>
+                                <span>Цветовая схема</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <select id="color-scheme">
+                                    <option value="orange">Оранжевая</option>
+                                    <option value="blue">Синяя</option>
+                                    <option value="gray">Серая</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/font.png" alt="" />
+                                </div>
+                                <span>Шрифт</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <button id='btn-select-font'>Выбрать</button>
+                            </div>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+                
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Язык</div>
+                    <div class="setting-item-cards">
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/language.png" alt="" />
+                                </div>
+                                <span>Язык</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <select id="language-select">
+                                    <option value="ru">Русский</option>
+                                    <option value="en">Английский</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Фон</div>
+                    <div class="setting-item-cards">
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/image.png" alt="" />
+                                </div>
+                                <span>Изображение</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <button id='btn-select-image'>Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="setting-item-card more">
+                            <div class="setting-item-card-container">
+                                <div class="setting-item-card-title">
+                                    <div class="setting-item-card-title-image">
+                                        <img src="../icons/invert.png" alt="" />
+                                    </div>
+                                    <span>Инвертирование текста шапки</span>
+                                </div>
+                                <div class="setting-item-card-text toggle-btn">
+                                    <button class="toggle btn_invert" id="btn_toggle">
+                                        <div class="toggle-round"></div>
+                                        <div class="toggle-bg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="setting-more-text">
+                                Обеспечивает контрастность и читаемость текста при выборе изображения из противоположной темы оформления
+                            </div>
+                            
+                        </div>
+                        <div class="setting-item-card more">
+                            <div class="setting-item-card-container">
+                                <div class="setting-item-card-title">
+                                    <div class="setting-item-card-title-image">
+                                        <img src="../icons/scattering.png" alt="" />
+                                    </div>
+                                    <span>Осветление/затемнение шапки</span>
+                                </div>
+                                <div class="setting-item-card-text toggle-btn">
+                                    <button class="toggle " id="btn_toggle">
+                                        <div class="toggle-round"></div>
+                                        <div class="toggle-bg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="setting-more-text">
+                                Обеспечивает гармоничное сочетание с фоновым изображением без инвертирования текста
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Прочее</div>
+                    <div class="setting-item-cards">
+
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/esc.png" alt="" />
+                                </div>
+                                <span>Закрывать модальные окна по Esc</span>
+                            </div>
+                            <div class="setting-item-card-text toggle-btn">
+                                <button class="toggle active btn_close_esc" id="btn_toggle">
+                                    <div class="toggle-round"></div>
+                                    <div class="toggle-bg"></div>
+                                </button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-fonts">
+                <div class="modal-fonts-content">
+                    <div class="modal-fonts-title">Выбор шрифта</div>
+                    <div class="modal-fonts-items">
+                        <div class="modal-fonts-item">
+                            <div class="modal-fonts-item-title">Шрифт</div>
+                            <div class="modal-fonts-item-example font-family">
+                                <span></span>
+                            </div>
+                            <div class="modal-fonts-item-cards fs">
+                                <span class="modal-fonts-item-card fs" id="ff1">Roboto</span>
+                                <span class="modal-fonts-item-card fs" id="ff2">Open Sans</span>
+                                <span class="modal-fonts-item-card fs" id="ff3">Inter</span>
+                                <span class="modal-fonts-item-card fs" id="ff4">Montserrat</span>
+                                <span class="modal-fonts-item-card fs" id="ff5">PTSans</span>
+                                <span class="modal-fonts-item-card fs" id="ff6">Sansation</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-fonts-item fw">
+                            <div class="modal-fonts-item-title">Размер</div>
+                            <div class="modal-fonts-item-example font-size">
+                                <span></span>
+                            </div>
+                            <div class="modal-fonts-item-cards fw">
+                                <span class="modal-fonts-item-card fw" id="fw1">12</span>
+                                <span class="modal-fonts-item-card fw" id="fw2">14</span>
+                                <span class="modal-fonts-item-card fw" id="fw3">16</span>
+                                <span class="modal-fonts-item-card fw" id="fw4">18</span>
+                                <span class="modal-fonts-item-card fw" id="fw5">20</span>
+                                <span class="modal-fonts-item-card fw" id="fw6">22</span>
+                                <span class="modal-fonts-item-card fw" id="fw7">24</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-fonts-example">
+                        <div class="modal-fonts-example-title">Пример</div>
+                        <div class="modal-fonts-example-text">
+                            <span>AaBbYyZz</span>
+                        </div>
+                    </div>
+                    <div class="modal-fonts-btns">
+                        <div class="modal-fonts-btn accept">Применить</div>
+                        <div class="modal-fonts-btn cancel">Отмена</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings_container-content table " id="setting-table">
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Границы</div>
+                    <div class="setting-item-cards">
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/border.png" alt="" />
+                                </div>
+                                <span>Границы таблицы</span>
+                            </div>
+                            <div class="setting-item-card-text toggle-btn">
+                                <button class="toggle border" id="btn_toggle">
+                                    <div class="toggle-round"></div>
+                                    <div class="toggle-bg"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title border noactive">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/palitre.png" alt="" />
+                                </div>
+                                <span>Цвет границ</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <input type="color" class="input-toggle-border" value="#777777" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Строки</div>
+                    <div class="setting-item-cards">
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/bg-row.png" alt="" />
+                                </div>
+                                <span>Фон строк таблицы</span>
+                            </div>
+                            <div class="setting-item-card-text toggle-btn">
+                                <button class="toggle bg-row" id="btn_toggle">
+                                    <div class="toggle-round"></div>
+                                    <div class="toggle-bg"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="setting-item-card more">
+                            <div class="setting-item-card-container">
+                                <div class="setting-item-card-title bg-row noactive">
+                                    <div class="setting-item-card-title-image">
+                                        <img src="../icons/palitre.png" alt="" />
+                                    </div>
+                                    <span>Цвет фона</span>
+                                </div>
+                                <div class="setting-item-card-text bg-row">
+                                    <input type="color" class="input-toggle-bg-row" value="#777777" disabled="true" />
+                                </div>
+                            </div>
+                            <div class="setting-more-text">
+                                Закрашивается каждая вторая строка
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Размытие фона таблицы</div>
+                    <div class="setting-item-cards">
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/blur.png" alt="" />
+                                </div>
+                                <span>Blur-эффект</span>
+                            </div>
+                            <div class="setting-item-card-text fdsfsd toggle-btn">
+                                <button class="toggle " id="btn_toggle">
+                                    <div class="toggle-round"></div>
+                                    <div class="toggle-bg"></div>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Видимость полей</div>
+                    <div class="table-cols">
+                        <div class="table-cols-title">Включить поля:</div>
+                        <div class="table-cols-items" id="available-fields">
+                            <div class="table-cols-item active"><span>Шифр</span></div>
+                            <div class="table-cols-item active"><span>Кем редактирован</span></div>
+                            <div class="table-cols-item active"><span>ID</span></div>
+                            <div class="table-cols-item active"><span>Создан</span></div>
+                            <div class="table-cols-item active"><span>Название нижнее</span></div>
+                            <div class="table-cols-item active"><span>Кем создан</span></div>
+                            <div class="table-cols-item active"><span>Название верхнее</span></div>
+                            <div class="table-cols-item active"><span>Редактирован</span></div>
+                            <div class="table-cols-item active"><span>Вер. внутр.</span></div>
+                            <div class="table-cols-item"><span>Лист</span></div>
+                            <div class="table-cols-item"><span>Размер</span></div>
+                        </div>
+                    </div>
+                    <div class="table-cols">
+                        <div class="table-cols-title">Включить поля:</div>
+                        <div class="table-cols-items grab" id="selected-fields">
+                            <!-- выбранные поля -->
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+
+            <div class="settings_container-content security " id="setting-security">
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Вход</div>
+                    <div class="setting-item-cards">
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/password.png" alt="" />
+                                </div>
+                                <span>Пароль</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <button id='btn-select-font'>Выбрать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="reset-settings">
+                        Сбросить все настройки оформления
+                    </button>
+                </div>
+            </div>
+            <div class="settings_container-content support " id="setting-support">
+                <div class="settings_container-content-item">
+                    <div class="settings_container-content-item-title">Контакты</div>
+                    <div class="contact-cards">
+                        <div class="contact-image">
+                            <img src="../icons/sys_admin.png" alt="">
+                        </div>
+                        <div class="contact-items">
+                            <div class="contact-item title">
+                                <span>Системный администратор</span>
+                            </div>
+                            <div class="contact-item">
+                                <span>+1 111 111-11-11</span>
+                                <span>system@admin.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings_container-content-item-title">Поддержка</div>
+                    <div class="support-content">
+                        <div class="support-content-text">Отправить заявку в Help Desk</div>
+                        <a href="#" class="support-content-link">
+                            <span>Связаться</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="../scripts/settings.js"></script>
+    <script src="../scripts/cookie.js"></script>
+</body>
+</html>

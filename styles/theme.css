@@ -1,0 +1,191 @@
+/* LIGHT */
+body.light {
+    background-color: #EFEFEF;
+    color: #000;
+}
+body.light a {
+    color: #000;
+}
+body.light .sidebar,
+body.light .main_content-table,
+body.light .main_content-panel,
+body.light .settings_container-content
+{
+    background-color: #fff;
+}
+body.light .sidebar-user-image,
+body.light .sidebar-panel-item-btn {
+    background-color: #0001;
+}
+body.light .main_content-table table thead tr {
+    background-color: #fff;
+}
+body.light .sidebar-user-image img,
+body.light .sidebar-item-block img,
+body.light #btn-quit,
+body.light #btn-favorite,
+body.light #btn-settings,
+body.light #btn-main-panel img,
+body.light .btn-search img,
+body.light .list-btn img,
+body.light .sidebar_settings-menu-item img,
+body.light .setting-profile-image-image img,
+body.light .setting-item-card-title-image img,
+body.light .contact-image img
+{
+    filter: invert(0%);
+}
+body.light .main_content-header-item-line {
+    background-color: #0002;
+}
+body.light #btn-main-panel {
+    background-color: #0001;
+}
+body.light .select-list {
+    color: #000;
+
+    & option {
+        background-color: #fff7;
+    }
+}
+body.light .setting-profile-image-image,
+body.light .setting-profile-image button
+{
+    background-color: #0001;
+    color: #000;
+}
+body.light .sidebar_settings-menu-item:hover,
+body.light .sidebar_settings-menu-item.active {
+    background-color: #0001;
+}
+body.light .setting-more-text {
+    color: #0005;
+}
+body.light .setting-item-card-text select,
+body.light .setting-item-card-text button,
+body.light .toggle {
+    background-color: #FFF0F0;
+    box-shadow: 0 4px 4px 0 #00000025;
+    color: #000;
+}
+body.light .setting-item-card-title span {
+    color: #000;
+}
+body.light .setting-item-card-title.noactive span {
+    color: #0005;
+}
+body.light .contact-item span {
+    color: #0005;
+}
+body.light .contact-item.title span {
+    color: #000;
+}
+body.light .support-content-link {
+    border: 1px solid #0005;
+}
+body.light .support-content-link span {
+    color: #0005;
+}
+body.light thead tr th:not(:last-child)::before {
+    background-color: #0002;
+}
+
+
+/* DARK */
+body.dark {
+    background-color: #222222;
+    color: #fff;
+}
+body.dark a {
+    color: #fff;
+}
+body.dark .sidebar,
+body.dark .main_content-table,
+body.dark .main_content-panel,
+body.dark .settings_container-content
+{
+    background-color: #3A3A3A;
+}
+body.dark .sidebar-user-image {
+    background-color: #fff1;
+}
+body.dark .sidebar-panel-item-btn {
+    background-color: #0005;
+}
+body.dark .main_content-table table thead tr {
+    background-color: #3A3A3A;
+}
+body.dark .sidebar-user-image img,
+body.dark .sidebar-panel-item-btn img,
+body.dark .sidebar-item-block img,
+body.dark #btn-quit,
+body.dark #btn-favorite,
+body.dark #btn-settings,
+body.dark #btn-main-panel img,
+body.dark .btn-search img,
+body.dark .list-btn img,
+body.dark .sidebar_settings-menu-item img,
+body.dark .setting-profile-image-image img,
+body.dark .setting-item-card-title-image img,
+body.dark .contact-image img
+{
+    filter: invert(100%);
+}
+body.dark .main_content-header-item-line {
+    background-color: #fff5;
+}
+body.dark #btn-main-panel {
+    background-color: #fff1;
+}
+body.dark .select-list {
+    color: #fff;
+
+    & option {
+        background-color: #0007;
+    }
+}
+body.dark iframe {
+    background-color: #000;
+    filter: invert(100%);
+}
+body.dark .setting-profile-image-image,
+body.dark .setting-profile-image button
+{
+    background-color: #fff1;
+    color: #fff;
+}
+body.dark .sidebar_settings-menu-item:hover,
+body.dark .sidebar_settings-menu-item.active {
+    background-color: #fff1;
+}
+body.dark .setting-more-text {
+    color: #fff5;
+}
+body.dark .setting-item-card-text select,
+body.dark .setting-item-card-text button,
+body.dark .toggle {
+    background-color: #575757;
+    box-shadow: 0 4px 4px 0 #00000025;
+    color: #fff;
+}
+body.dark .setting-item-card-title span {
+    color: #fff;
+}
+body.dark .setting-item-card-title.noactive span {
+    color: #fff5;
+}
+body.dark .contact-item span {
+    color: #fff5;
+}
+body.dark .contact-item.title span {
+    color: #fff;
+}
+body.dark .support-content-link {
+    border: 1px solid #fff5;
+}
+body.dark .support-content-link span {
+    color: #fff5;
+}
+body.dark thead tr th:not(:last-child)::before {
+    background-color: #fff2;
+}

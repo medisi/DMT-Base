@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DMT Base | Settings</title>
+    <link rel="shortcut icon" href="../images/logotip.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/color_scheme.css">
@@ -33,23 +34,23 @@
             <div class="sidebar_settings-menu">
                 <div class="sidebar_settings-menu-item" id="sidebar_settings-profile">
                     <img src="../icons/user.png" alt="">
-                    <span>Профиль</span>
+                    <span class="styled-text">Профиль</span>
                 </div>
                 <div class="sidebar_settings-menu-item" id="sidebar_settings-personalization">
                     <img src="../icons/personalization.png" alt="">
-                    <span>Персонализация</span>
+                    <span class="styled-text">Персонализация</span>
                 </div>
                 <div class="sidebar_settings-menu-item" id="sidebar_settings-table">
                     <img src="../icons/table.png" alt="">
-                    <span>Таблица</span>
+                    <span class="styled-text">Таблица</span>
                 </div>
                 <div class="sidebar_settings-menu-item" id="sidebar_settings-security">
                     <img src="../icons/security.png" alt="">
-                    <span>Безопасность</span>
+                    <span class="styled-text">Безопасность</span>
                 </div>
                 <div class="sidebar_settings-menu-item" id="sidebar_settings-support">
                     <img src="../icons/support.png" alt="">
-                    <span>Поддержка</span>
+                    <span class="styled-text">Поддержка</span>
                 </div>
             </div>
 
@@ -62,64 +63,64 @@
         <div class="settings_container">
             <div class="settings_container-header">
                 <div>
-                    <span>Настройки</span>
-                    <span>—</span>
-                    <span class="name_settings"></span>
+                    <span class="styled-text">Настройки</span>
+                    <span class="styled-text">—</span>
+                    <span class="name_settings styled-text"></span>
                 </div>
-                <button class="save-settings" id="savePersonalization">Применить</button>
+                <button class="save-settings styled-text" id="savePersonalization">Применить</button>
             </div>
             <div class="settings_container-content profile" id="setting-profile">
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Основные данные</div>
+                    <div class="settings_container-content-item-title styled-title">Основные данные</div>
 
                     <div class="setting-profile-cards">
                         <div class="setting-profile-card">
-                            <div class="setting-profile-card-title">ФИО</div>
-                            <div class="setting-profile-card-text">Surname Name</div>
+                            <div class="setting-profile-card-title styled-text">ФИО</div>
+                            <div class="setting-profile-card-text styled-text">Surname Name</div>
                         </div>
                         <div class="setting-profile-card">
-                            <div class="setting-profile-card-title">Наименование организации</div>
-                            <div class="setting-profile-card-text">Name company</div>
+                            <div class="setting-profile-card-title styled-text">Наименование организации</div>
+                            <div class="setting-profile-card-text styled-text">Name company</div>
                         </div>
                         <div class="setting-profile-card">
-                            <div class="setting-profile-card-title">Контактный номер телефона</div>
-                            <div class="setting-profile-card-text">+7 777 777-77-77</div>
+                            <div class="setting-profile-card-title styled-text">Контактный номер телефона</div>
+                            <div class="setting-profile-card-text styled-text">+7 777 777-77-77</div>
                         </div>
                         <div class="setting-profile-card">
-                            <div class="setting-profile-card-title">Электронная почта</div>
-                            <div class="setting-profile-card-text">address@email.com</div>
+                            <div class="setting-profile-card-title styled-text">Электронная почта</div>
+                            <div class="setting-profile-card-text styled-text">address@email.com</div>
                         </div>
                     </div>
                 </div>
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Изображение</div>
+                    <div class="settings_container-content-item-title styled-title">Изображение</div>
 
                     <div class="setting-profile-image">
                         <div class="setting-profile-image-image">
                             <img src="../images/user.png" alt="" />
                         </div>
-                        <button>изменить</button>
+                        <button class="styled-text">изменить</button>
                     </div>
                 </div>
 
-                <button id="settigs-btn-quit">
+                <button id="settigs-btn-quit" class="styled-text">
                     Выйти
                 </button>
             </div>
 
             <div class="settings_container-content personalization " id="setting-personalization">
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Оформление</div>
+                    <div class="settings_container-content-item-title styled-title">Оформление</div>
                     <div class="setting-item-cards">
                         <div class="setting-item-card">
                             <div class="setting-item-card-title">
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/theme.png" alt="" />
                                 </div>
-                                <span>Тема</span>
+                                <span class="styled-text">Тема</span>
                             </div>
                             <div class="setting-item-card-text">
-                                <select id="theme-app">
+                                <select id="theme-app"  class="styled-text">
                                     <option value="light">Светлая</option>
                                     <option value="dark">Тёмная</option>
                                 </select>
@@ -131,10 +132,10 @@
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/color.png" alt="" />
                                 </div>
-                                <span>Цветовая схема</span>
+                                <span class="styled-text">Цветовая схема</span>
                             </div>
                             <div class="setting-item-card-text">
-                                <select id="color-scheme">
+                                <select id="color-scheme" class="styled-text">
                                     <option value="orange">Оранжевая</option>
                                     <option value="blue">Синяя</option>
                                     <option value="gray">Серая</option>
@@ -147,10 +148,10 @@
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/font.png" alt="" />
                                 </div>
-                                <span>Шрифт</span>
+                                <span class="styled-text">Шрифт</span>
                             </div>
                             <div class="setting-item-card-text">
-                                <button id='btn-select-font'>Выбрать</button>
+                                <button id='btn-select-font' class="styled-text">Выбрать</button>
                             </div>
                         </div>
                         
@@ -160,17 +161,17 @@
                 </div>
                 
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Язык</div>
+                    <div class="settings_container-content-item-title styled-title">Язык</div>
                     <div class="setting-item-cards">
                         <div class="setting-item-card">
                             <div class="setting-item-card-title">
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/language.png" alt="" />
                                 </div>
-                                <span>Язык</span>
+                                <span class="styled-text">Язык</span>
                             </div>
                             <div class="setting-item-card-text">
-                                <select id="language-select">
+                                <select id="language-select" class="styled-text">
                                     <option value="ru">Русский</option>
                                     <option value="en">Английский</option>
                                 </select>
@@ -180,17 +181,17 @@
                 </div>
                 
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Фон</div>
+                    <div class="settings_container-content-item-title styled-title">Фон</div>
                     <div class="setting-item-cards">
                         <div class="setting-item-card">
                             <div class="setting-item-card-title">
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/image.png" alt="" />
                                 </div>
-                                <span>Изображение</span>
+                                <span class="styled-text">Изображение</span>
                             </div>
                             <div class="setting-item-card-text">
-                                <button id='btn-select-image'>Выбрать</button>
+                                <button id='btn-select-image' class="styled-text">Выбрать</button>
                             </div>
                         </div>
                         <div class="setting-item-card more">
@@ -199,16 +200,16 @@
                                     <div class="setting-item-card-title-image">
                                         <img src="../icons/invert.png" alt="" />
                                     </div>
-                                    <span>Инвертирование текста шапки</span>
+                                    <span class="styled-text">Инвертирование текста шапки</span>
                                 </div>
                                 <div class="setting-item-card-text toggle-btn">
-                                    <button class="toggle btn_invert" id="btn_toggle">
+                                    <button class="toggle btn_invert styled-text" id="btn_toggle">
                                         <div class="toggle-round"></div>
                                         <div class="toggle-bg"></div>
                                     </button>
                                 </div>
                             </div>
-                            <div class="setting-more-text">
+                            <div class="setting-more-text styled-text">
                                 Обеспечивает контрастность и читаемость текста при выборе изображения из противоположной темы оформления
                             </div>
                             
@@ -219,16 +220,16 @@
                                     <div class="setting-item-card-title-image">
                                         <img src="../icons/scattering.png" alt="" />
                                     </div>
-                                    <span>Осветление/затемнение шапки</span>
+                                    <span class="styled-text">Осветление/затемнение шапки</span>
                                 </div>
                                 <div class="setting-item-card-text toggle-btn">
-                                    <button class="toggle " id="btn_toggle">
+                                    <button class="toggle styled-text" id="btn_toggle">
                                         <div class="toggle-round"></div>
                                         <div class="toggle-bg"></div>
                                     </button>
                                 </div>
                             </div>
-                            <div class="setting-more-text">
+                            <div class="setting-more-text styled-text">
                                 Обеспечивает гармоничное сочетание с фоновым изображением без инвертирования текста
                             </div>
                             
@@ -237,7 +238,7 @@
                     </div>
                 </div>
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Прочее</div>
+                    <div class="settings_container-content-item-title styled-title">Прочее</div>
                     <div class="setting-item-cards">
 
                         <div class="setting-item-card">
@@ -245,10 +246,10 @@
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/esc.png" alt="" />
                                 </div>
-                                <span>Закрывать модальные окна по Esc</span>
+                                <span class="styled-text">Закрывать модальные окна по Esc</span>
                             </div>
                             <div class="setting-item-card-text toggle-btn">
-                                <button class="toggle active btn_close_esc" id="btn_toggle">
+                                <button class="toggle active btn_close_esc styled-text" id="btn_toggle">
                                     <div class="toggle-round"></div>
                                     <div class="toggle-bg"></div>
                                 </button>
@@ -265,62 +266,62 @@
                     <div class="modal-fonts-title">Выбор шрифта</div>
                     <div class="modal-fonts-items">
                         <div class="modal-fonts-item">
-                            <div class="modal-fonts-item-title">Шрифт</div>
+                            <div class="modal-fonts-item-title styled-text">Шрифт</div>
                             <div class="modal-fonts-item-example font-family">
-                                <span></span>
+                                <span class="styled-text"></span>
                             </div>
-                            <div class="modal-fonts-item-cards fs">
-                                <span class="modal-fonts-item-card fs" id="ff1">Roboto</span>
-                                <span class="modal-fonts-item-card fs" id="ff2">Open Sans</span>
-                                <span class="modal-fonts-item-card fs" id="ff3">Inter</span>
-                                <span class="modal-fonts-item-card fs" id="ff4">Montserrat</span>
-                                <span class="modal-fonts-item-card fs" id="ff5">PTSans</span>
-                                <span class="modal-fonts-item-card fs" id="ff6">Sansation</span>
+                            <div class="modal-fonts-item-cards ff">
+                                <span class="modal-fonts-item-card ff styled-text" id="ff1">Roboto</span>
+                                <span class="modal-fonts-item-card ff styled-text" id="ff2">Open Sans</span>
+                                <span class="modal-fonts-item-card ff styled-text" id="ff3">Inter</span>
+                                <span class="modal-fonts-item-card ff styled-text" id="ff4">Montserrat</span>
+                                <span class="modal-fonts-item-card ff styled-text" id="ff5">PTSans</span>
+                                <span class="modal-fonts-item-card ff styled-text" id="ff6">Sansation</span>
                             </div>
                         </div>
 
                         <div class="modal-fonts-item fw">
-                            <div class="modal-fonts-item-title">Размер</div>
+                            <div class="modal-fonts-item-title styled-text">Размер</div>
                             <div class="modal-fonts-item-example font-size">
-                                <span></span>
+                                <span class="styled-text"></span>
                             </div>
-                            <div class="modal-fonts-item-cards fw">
-                                <span class="modal-fonts-item-card fw" id="fw1">12</span>
-                                <span class="modal-fonts-item-card fw" id="fw2">14</span>
-                                <span class="modal-fonts-item-card fw" id="fw3">16</span>
-                                <span class="modal-fonts-item-card fw" id="fw4">18</span>
-                                <span class="modal-fonts-item-card fw" id="fw5">20</span>
-                                <span class="modal-fonts-item-card fw" id="fw6">22</span>
-                                <span class="modal-fonts-item-card fw" id="fw7">24</span>
+                            <div class="modal-fonts-item-cards fs">
+                                <span class="modal-fonts-item-card fs styled-text" id="fs1">12</span>
+                                <span class="modal-fonts-item-card fs styled-text" id="fs2">14</span>
+                                <span class="modal-fonts-item-card fs styled-text" id="fs3">16</span>
+                                <span class="modal-fonts-item-card fs styled-text" id="fs4">18</span>
+                                <span class="modal-fonts-item-card fs styled-text" id="fs5">20</span>
+                                <span class="modal-fonts-item-card fs styled-text" id="fs6">22</span>
+                                <span class="modal-fonts-item-card fs styled-text" id="fs7">24</span>
                             </div>
                         </div>
                     </div>
                     <div class="modal-fonts-example">
-                        <div class="modal-fonts-example-title">Пример</div>
+                        <div class="modal-fonts-example-title styled-text">Пример</div>
                         <div class="modal-fonts-example-text">
-                            <span>AaBbYyZz</span>
+                            <span class="styled-text">AaBbYyZz</span>
                         </div>
                     </div>
                     <div class="modal-fonts-btns">
-                        <div class="modal-fonts-btn accept">Применить</div>
-                        <div class="modal-fonts-btn cancel">Отмена</div>
+                        <button class="modal-fonts-btn accept styled-text">Применить</button>
+                        <button class="modal-fonts-btn cancel styled-text">Отмена</button>
                     </div>
                 </div>
             </div>
 
             <div class="settings_container-content table " id="setting-table">
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Границы</div>
+                    <div class="settings_container-content-item-title styled-title">Границы</div>
                     <div class="setting-item-cards">
                         <div class="setting-item-card">
                             <div class="setting-item-card-title">
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/border.png" alt="" />
                                 </div>
-                                <span>Границы таблицы</span>
+                                <span class="styled-text">Границы таблицы</span>
                             </div>
                             <div class="setting-item-card-text toggle-btn">
-                                <button class="toggle border" id="btn_toggle">
+                                <button class="toggle border styled-text" id="btn_toggle">
                                     <div class="toggle-round"></div>
                                     <div class="toggle-bg"></div>
                                 </button>
@@ -331,27 +332,27 @@
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/palitre.png" alt="" />
                                 </div>
-                                <span>Цвет границ</span>
+                                <span class="styled-text">Цвет границ</span>
                             </div>
                             <div class="setting-item-card-text">
-                                <input type="color" class="input-toggle-border" value="#777777" disabled />
+                                <input type="color" class="input-toggle-border styled-text" value="#777777" disabled />
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Строки</div>
+                    <div class="settings_container-content-item-title styled-title">Строки</div>
                     <div class="setting-item-cards">
                         <div class="setting-item-card">
                             <div class="setting-item-card-title">
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/bg-row.png" alt="" />
                                 </div>
-                                <span>Фон строк таблицы</span>
+                                <span class="styled-text">Фон строк таблицы</span>
                             </div>
                             <div class="setting-item-card-text toggle-btn">
-                                <button class="toggle bg-row" id="btn_toggle">
+                                <button class="toggle bg-row styled-text" id="btn_toggle">
                                     <div class="toggle-round"></div>
                                     <div class="toggle-bg"></div>
                                 </button>
@@ -363,13 +364,13 @@
                                     <div class="setting-item-card-title-image">
                                         <img src="../icons/palitre.png" alt="" />
                                     </div>
-                                    <span>Цвет фона</span>
+                                    <span class="styled-text">Цвет фона</span>
                                 </div>
                                 <div class="setting-item-card-text bg-row">
-                                    <input type="color" class="input-toggle-bg-row" value="#777777" disabled="true" />
+                                    <input type="color" class="input-toggle-bg-row styled-text" value="#777777" disabled="true" />
                                 </div>
                             </div>
-                            <div class="setting-more-text">
+                            <div class="setting-more-text styled-text">
                                 Закрашивается каждая вторая строка
                             </div>
                             
@@ -377,17 +378,17 @@
                     </div>
                 </div>
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Размытие фона таблицы</div>
+                    <div class="settings_container-content-item-title styled-title">Размытие фона таблицы</div>
                     <div class="setting-item-cards">
                         <div class="setting-item-card">
                             <div class="setting-item-card-title">
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/blur.png" alt="" />
                                 </div>
-                                <span>Blur-эффект</span>
+                                <span class="styled-text">Blur-эффект</span>
                             </div>
                             <div class="setting-item-card-text fdsfsd toggle-btn">
-                                <button class="toggle " id="btn_toggle">
+                                <button class="toggle styled-text" id="btn_toggle">
                                     <div class="toggle-round"></div>
                                     <div class="toggle-bg"></div>
                                 </button>
@@ -397,78 +398,75 @@
                     </div>
                 </div>
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Видимость полей</div>
+                    <div class="settings_container-content-item-title styled-title">Видимость полей</div>
                     <div class="table-cols">
-                        <div class="table-cols-title">Включить поля:</div>
+                        <div class="table-cols-title styled-text">Включить поля:</div>
                         <div class="table-cols-items" id="available-fields">
-                            <div class="table-cols-item active"><span>Шифр</span></div>
-                            <div class="table-cols-item active"><span>Кем редактирован</span></div>
-                            <div class="table-cols-item active"><span>ID</span></div>
-                            <div class="table-cols-item active"><span>Создан</span></div>
-                            <div class="table-cols-item active"><span>Название нижнее</span></div>
-                            <div class="table-cols-item active"><span>Кем создан</span></div>
-                            <div class="table-cols-item active"><span>Название верхнее</span></div>
-                            <div class="table-cols-item active"><span>Редактирован</span></div>
-                            <div class="table-cols-item active"><span>Вер. внутр.</span></div>
-                            <div class="table-cols-item"><span>Лист</span></div>
-                            <div class="table-cols-item"><span>Размер</span></div>
+                            <div class="table-cols-item active styled-text"><span>Шифр</span></div>
+                            <div class="table-cols-item active styled-text"><span>Кем редактирован</span></div>
+                            <div class="table-cols-item active styled-text"><span>ID</span></div>
+                            <div class="table-cols-item active styled-text"><span>Создан</span></div>
+                            <div class="table-cols-item active styled-text"><span>Название нижнее</span></div>
+                            <div class="table-cols-item active styled-text"><span>Кем создан</span></div>
+                            <div class="table-cols-item active styled-text"><span>Название верхнее</span></div>
+                            <div class="table-cols-item active styled-text"><span>Редактирован</span></div>
+                            <div class="table-cols-item active styled-text"><span>Вер. внутр.</span></div>
+                            <div class="table-cols-item styled-text"><span>Лист</span></div>
+                            <div class="table-cols-item styled-text"><span>Размер</span></div>
                         </div>
                     </div>
                     <div class="table-cols">
-                        <div class="table-cols-title">Включить поля:</div>
+                        <div class="table-cols-title styled-text">Включить поля:</div>
                         <div class="table-cols-items grab" id="selected-fields">
                             <!-- выбранные поля -->
                         </div>
                     </div>
                 </div>
-                
-                
-                
             </div>
 
             <div class="settings_container-content security " id="setting-security">
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Вход</div>
+                    <div class="settings_container-content-item-title styled-title">Вход</div>
                     <div class="setting-item-cards">
                         <div class="setting-item-card">
                             <div class="setting-item-card-title">
                                 <div class="setting-item-card-title-image">
                                     <img src="../icons/password.png" alt="" />
                                 </div>
-                                <span>Пароль</span>
+                                <span class="styled-text">Пароль</span>
                             </div>
                             <div class="setting-item-card-text">
-                                <button id='btn-select-font'>Выбрать</button>
+                                <button id='btn-select-font' class="styled-text">Выбрать</button>
                             </div>
                         </div>
                     </div>
-                    <button id="reset-settings">
+                    <button id="reset-settings" class="styled-text">
                         Сбросить все настройки оформления
                     </button>
                 </div>
             </div>
             <div class="settings_container-content support " id="setting-support">
                 <div class="settings_container-content-item">
-                    <div class="settings_container-content-item-title">Контакты</div>
+                    <div class="settings_container-content-item-title styled-title">Контакты</div>
                     <div class="contact-cards">
                         <div class="contact-image">
                             <img src="../icons/sys_admin.png" alt="">
                         </div>
                         <div class="contact-items">
                             <div class="contact-item title">
-                                <span>Системный администратор</span>
+                                <span class="styled-text">Системный администратор</span>
                             </div>
                             <div class="contact-item">
-                                <span>+1 111 111-11-11</span>
-                                <span>system@admin.com</span>
+                                <span class="styled-subtext">+1 111 111-11-11</span>
+                                <span class="styled-subtext">system@admin.com</span>
                             </div>
                         </div>
                     </div>
-                    <div class="settings_container-content-item-title">Поддержка</div>
+                    <div class="settings_container-content-item-title styled-title">Поддержка</div>
                     <div class="support-content">
-                        <div class="support-content-text">Отправить заявку в Help Desk</div>
+                        <div class="support-content-text styled-text">Отправить заявку в Help Desk</div>
                         <a href="#" class="support-content-link">
-                            <span>Связаться</span>
+                            <span class="styled-text">Связаться</span>
                         </a>
                     </div>
                 </div>

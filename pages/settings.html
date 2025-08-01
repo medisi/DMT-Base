@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/color_scheme.css">
+    <link rel="stylesheet" href="../styles/media.css">
 </head>
 <body class="light orange">
-    <div class="main">
-        <div class="sidebar">
+    <div class="main settings">
+        <div class="sidebar settings">
             <div class="resize-handle"></div>
+            <button id="hidden-sidebar">
+                <img src="../icons/btn-sidebar.png" alt="">
+            </button>
             
             <a href="../index.html" class="sidebar-logo">
                 <div class="sidebar-logo-image">
@@ -32,23 +36,23 @@
             <div class="sidebar_settings-title">Настройки</div>
 
             <div class="sidebar_settings-menu">
-                <div class="sidebar_settings-menu-item" id="sidebar_settings-profile">
+                <div class="sidebar_settings-menu-item mob" id="sidebar_settings-profile">
                     <img src="../icons/user.png" alt="">
                     <span class="styled-text">Профиль</span>
                 </div>
-                <div class="sidebar_settings-menu-item" id="sidebar_settings-personalization">
+                <div class="sidebar_settings-menu-item mob" id="sidebar_settings-personalization">
                     <img src="../icons/personalization.png" alt="">
                     <span class="styled-text">Персонализация</span>
                 </div>
-                <div class="sidebar_settings-menu-item" id="sidebar_settings-table">
+                <div class="sidebar_settings-menu-item mob" id="sidebar_settings-table">
                     <img src="../icons/table.png" alt="">
                     <span class="styled-text">Таблица</span>
                 </div>
-                <div class="sidebar_settings-menu-item" id="sidebar_settings-security">
+                <div class="sidebar_settings-menu-item mob" id="sidebar_settings-security">
                     <img src="../icons/security.png" alt="">
                     <span class="styled-text">Безопасность</span>
                 </div>
-                <div class="sidebar_settings-menu-item" id="sidebar_settings-support">
+                <div class="sidebar_settings-menu-item mob" id="sidebar_settings-support">
                     <img src="../icons/support.png" alt="">
                     <span class="styled-text">Поддержка</span>
                 </div>
@@ -253,6 +257,26 @@
                                     <div class="toggle-round"></div>
                                     <div class="toggle-bg"></div>
                                 </button>
+                            </div>
+                        </div>
+
+                        <div class="setting-item-card">
+                            <div class="setting-item-card-title">
+                                <div class="setting-item-card-title-image">
+                                    <img src="../icons/panel.png" alt="" />
+                                </div>
+                                <span class="styled-text">Показывать панель информации</span>
+                            </div>
+                            <div class="setting-item-card-text">
+                                <!-- <button class="toggle btn_close_esc styled-text active" id="btn-visible-panel">
+                                    <div class="toggle-round"></div>
+                                    <div class="toggle-bg"></div>
+                                </button> -->
+
+                                <select id="visible-panel-select" class="styled-text">
+                                    <option value="visible">Да</option>
+                                    <option value="novisible">Нет</option>
+                                </select>
                             </div>
                             
                         </div>

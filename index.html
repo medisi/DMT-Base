@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/color_scheme.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body class="orange light">
     <div class="main">
@@ -33,23 +34,7 @@
             </div>
             <div class="sidebar-name styled-text">Имя пользователя</div>
 
-            <div class="sidebar-panel">
-                <div class="sidebar-panel-item">
-                    <button class="sidebar-panel-item-btn">
-                        <img src="./icons/chevron.png" alt="">
-                    </button>
-                </div>
-                <div class="sidebar-panel-item">
-                    <button class="sidebar-panel-item-btn">
-                        <img src="./icons/history.png" alt="">
-                    </button>
-                    <button class="sidebar-panel-item-btn">
-                        <img src="./icons/star.png" alt="">
-                    </button>
-                </div>
-            </div>
-
-            <div class="sidebar-menu">
+            <div class="sidebar-menu active">
                 <a href="pages/all_documents.html" class="sidebar_menu-item-project styled-text">
                     Проект 1
                 </a>
@@ -72,7 +57,11 @@
             <img src="./icons/quit.png" alt="">
         </button>
 
-        <div class="main_content">
+        <a href="pages/settings.html" id="btn-settings-mobile">
+            <img src="./icons/settings.png" alt="">
+        </a>
+
+        <div class="main_content home">
             <div class="main_content-header home">
                 <div class="main_content-header-item">
 

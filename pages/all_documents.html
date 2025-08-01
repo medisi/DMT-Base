@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/color_scheme.css">
+    <link rel="stylesheet" href="../styles/media.css">
 </head>
 <body class="light orange">
-    <div class="main">
-        <div class="sidebar">
+    <div class="main all_doc">
+        <div class="sidebar all_doc">
             <div class="resize-handle"></div>
+            <a href="settings.html" id="btn-all-docs-mobile">
+                <img src="../icons/settings.png" alt="">
+            </a>
+
+            <button id="hidden-sidebar">
+                <img src="../icons/btn-sidebar.png" alt="">
+            </button>
             
             <a href="../index.html" class="sidebar-logo">
                 <div class="sidebar-logo-image">
@@ -40,16 +48,20 @@
                     </button>
                 </div>
                 <div class="sidebar-panel-item">
-                    <button class="sidebar-panel-item-btn">
+                    <button class="sidebar-panel-item-btn all">
+                        <img src="../icons/btn-sidebar.png" alt="">
+                    </button>
+                    <button class="sidebar-panel-item-btn history ">
                         <img src="../icons/history.png" alt="">
                     </button>
-                    <button class="sidebar-panel-item-btn">
-                        <img src="../icons/star.png" alt="">
+                    <button class="sidebar-panel-item-btn favorites">
+                        <img class="fav1" src="../icons/star.png" alt="">
+                        <img class="fav2" src="../icons/star_fav.png" alt="">
                     </button>
                 </div>
             </div>
 
-            <div class="sidebar-menu">
+            <div class="sidebar-menu active">
                 <ul>
                     <li class="list-item">
                         <details open>
@@ -183,49 +195,158 @@
                     </li>
                  </ul>
             </div>
+
+            <div class="sidebar-history">
+                <div class="sidebar-item-block favorites active">
+                    <span>
+                        PDF
+                    </span>
+                </div>
+                <div class="sidebar-item-block favorites">
+                    <span>
+                        Сводный план инженерных сетей М 1:500
+                    </span>
+                </div>
+                <div class="sidebar-item-block favorites">
+                    <span>
+                        ОПС наноски (Технопарк ст.Р корр.) ТЗ 1616-19, Глобал Проект 2ПКЛ-20кВ ПС867(Цимлянская)-ПС866(Перерва) (с растром)
+                    </span>
+                </div>
+                <div class="sidebar-item-block favorites">
+                    <span>
+                        Замечания
+                    </span>
+                </div>
+                <div class="sidebar-item-block favorites">
+                    <span>
+                       Водоотвод (начало)
+                    </span>
+                </div>
+                <div class="sidebar-item-block favorites">
+                    <span>
+                        Ситуационный план. М 1:2000
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar-favorites">
+                <div class="sidebar-item-block favorites active">
+                    <span>
+                        Сводный план инженерных сетей М 1:500
+                    </span>
+                </div>
+                <div class="sidebar-item-block favorites">
+                    <span>
+                        PDF
+                    </span>
+                </div>
+                <div class="sidebar-item-block favorites">
+                    <span>
+                        Ситуационный план. М 1:2000
+                    </span>
+                </div>
+            </div>
+
         </div>
 
         <button id="btn-quit">
             <img src="../icons/quit.png" alt="">
         </button>
 
-        <div class="main_content">
+        <div class="modal-add-list">
+            <div class="modal-add-list-content">
+                <div class="modal-title">Новый список</div>
+                <div class="modal-text">Введите название нового списка</div>
+                <input type="text" id="new-list" autocomplete="off">
+                <div class="modal-btns">
+                    <button id="modal-btn-add-list">ОК</button>
+                    <button id="modal-btn-add-cancel">Отмена</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-edit-list">
+            <div class="modal-edit-list-content">
+                <div class="modal-title">Редактировать список</div>
+                <div class="modal-text">Введите название списка, который хотите изменить</div>
+                <div class="modal-input-all-list">
+                    <input type="text" id="edit-all-list" autocomplete="off">
+                    <div class="edit-all">
+                        <div class="edit-list-all-item">Все</div>
+                        <div class="edit-list-all-item">Все</div>
+                        <div class="edit-list-all-item">Все</div>
+                        <div class="edit-list-all-item">Все</div>
+                    </div>
+                </div>
+                <div class="modal-text">Введите новое название списка</div>
+                <div class="modal-input-edit-list">
+                    <input type="text" id="edit-list" autocomplete="off">
+                </div>
+                
+                <div class="modal-btns">
+                    <button id="modal-btn-edit-list">ОК</button>
+                    <button id="modal-btn-edit-cancel">Отмена</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-delete-list">
+            <div class="modal-delete-list-content">
+                <div class="modal-title">Удалить список</div>
+                <div class="modal-text">Введите название списка, который хотите удалить</div>
+                <div class="modal-input">
+                    <input type="text" id="old-list" autocomplete="off">
+                    <div class="old-list-all">
+                        <!-- <div class="old-list-all-item">Все</div> -->
+                    </div>
+                </div>
+                <div class="modal-btns">
+                    <button id="modal-btn-delete-list">ОК</button>
+                    <button id="modal-btn-delete-cancel">Отмена</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_content all_doc">
             <div class="main_content-header">
                 <div class="main_content-header-item">
                     <span class="main_content-header-item-title styled-text">Название проекта</span>
                 </div>
-                <div class="main_content-header-item">
+                <div class="main_content-header-item two">
 
                     <div class="list">
-                        <label for="select-list" class="styled-text">Список</label>
-                        <select id="select-list" class="select-list styled-text">
-                            <option value="all">Все</option>
-                            <option value="1">Автомагистрали</option>
-                            <option value="2">Сети</option>
-                        </select>
-                        <button class="list-btn" id="btn-list-add">
-                            <img src="../icons/plus.png" alt="">
-                        </button>
-                        <button class="list-btn" id="btn-list-edit">
-                            <img src="../icons/edit.png" alt="">
-                        </button>
-                        <button class="list-btn" id="btn-list-delete">
-                            <img src="../icons/delete.png" alt="">
-                        </button>
+                        <div class="list-label">
+                            <label for="select-list" class="styled-text">Список</label>
+                            <select id="select-list" class="select-list styled-text">
+                                <option value="all">Все</option>
+                            </select>
+                        </div>
+                        <div class="list-btns">
+                            <button class="list-btn" id="btn-list-add">
+                                <img src="../icons/plus.png" alt="">
+                            </button>
+                            <button class="list-btn" id="btn-list-edit">
+                                <img src="../icons/edit.png" alt="">
+                            </button>
+                            <button class="list-btn" id="btn-list-delete">
+                                <img src="../icons/delete.png" alt="">
+                            </button>
+                        </div>
                     </div>
 
-                    <button id="btn-search" class="btn-search ">
-                        <img src="../icons/search.png" alt="">
-                        <input type="text" id="input-search" class="styled-text" placeholder="Найти...">
-                    </button>
+                    <div class="main-btns">
+                        <button id="btn-search" class="btn-search ">
+                            <img src="../icons/search.png" alt="">
+                            <input type="text" id="input-search" class="styled-text" placeholder="Найти...">
+                        </button>
 
-                    <button id="btn-favorite">
-                        <img src="../icons/star.png" alt="">
-                    </button>
+                        <button id="btn-favorite">
+                            <img class="btn-favorite-star-nofav active" src="../icons/star.png" alt="">
+                            <img class="btn-favorite-star-fav" src="../icons/star_fav.png" alt="">
+                        </button>
 
-                    <a href="../pages/settings.html" id="btn-settings">
-                        <img src="../icons/settings.png" alt="">
-                    </a>
+                        <a href="../pages/settings.html" id="btn-settings">
+                            <img src="../icons/settings.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -233,6 +354,9 @@
                 <table>
                     <thead>
                         <tr>
+                            <th class="col-star">
+                                <img src="../icons/star_fav.png" class="fav-star-in-table thead" alt="">
+                            </th>
                             <th class="cell-row-small styled-text">ID</th>
                             <th class="styled-text">Шифр</th>
                             <th class="cell-row-small styled-text">Вер. внутр.</th>
@@ -245,29 +369,34 @@
                         </tr>
                     </thead>
                     <tbody id="table-body">
-                        <tr>
+                        <tr class="table-body-row" id="table-body-row1">
+                            <td class="col-star"></td>
                             <td class="cell-row-small styled-text">636</td>
-                             <td class="styled-text">014/02-Э2-ОП.07</td>
+                            <td class="styled-text">014/02-Э2-ОП.07</td>
                             <td class="cell-row-small styled-text">2</td>
-                             <td class="styled-text">Опоры №9...17. Конструкция ростверков</td>
-                             <td class="styled-text">Ростверк монолитный тип 4</td>
+                            <td class="styled-text">Опоры №9...17. Конструкция ростверков</td>
+                            <td class="styled-text">Ростверк монолитный тип 4</td>
                             <td class="cell-row-small styled-text">17.12.14</td>
-                             <td class="styled-text">Романова Т. В.</td>
+                            <td class="styled-text">Романова Т. В.</td>
                             <td class="cell-row-small styled-text">17.12.14</td>
-                             <td class="styled-text">Романова Т. В.</td>
+                            <td class="styled-text">Романова Т. В.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row" id="table-body-row2">
+                            <td class="col-star">
+                                <img src="../icons/star_fav.png" class="fav-star-in-table" alt="">
+                            </td>
                             <td class="cell-row-small styled-text">65375</td>
-                             <td class="styled-text">0058-Р-СПС.К1-СХ</td>
+                            <td class="styled-text">0058-Р-СПС.К1-СХ</td>
                             <td class="cell-row-small styled-text">0</td>
-                             <td class="styled-text">Наружные сети и сооружения</td>
-                             <td class="styled-text">Ситуационный план. М 1:2000</td>
+                            <td class="styled-text">Наружные сети и сооружения</td>
+                            <td class="styled-text">Ситуационный план. М 1:2000</td>
                             <td class="cell-row-small styled-text">31.05.19</td>
-                             <td class="styled-text">Лакина К. А.</td>
+                            <td class="styled-text">Лакина К. А.</td>
                             <td class="cell-row-small styled-text">01.06.19</td>
-                             <td class="styled-text">Лакина К. А.</td>
+                            <td class="styled-text">Лакина К. А.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star"></td>
                             <td class="cell-row-small styled-text">65668</td>
                              <td class="styled-text">0058-Р-КЖ-ПС3.К1</td>
                             <td class="cell-row-small styled-text">1</td>
@@ -278,7 +407,10 @@
                             <td class="cell-row-small styled-text">06.06.19</td>
                              <td class="styled-text">Торшин М. Л.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star">
+                                <img src="../icons/star_fav.png" class="fav-star-in-table" alt="">
+                            </td>
                             <td class="cell-row-small styled-text">65344</td>
                              <td class="styled-text">0058-Р-СПС.К1</td>
                             <td class="cell-row-small styled-text">0</td>
@@ -289,7 +421,8 @@
                             <td class="cell-row-small styled-text">27.06.19</td>
                              <td class="styled-text">Лакина К. А.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star"></td>
                             <td class="cell-row-small styled-text">66740</td>
                              <td class="styled-text">ОПС_Технопарк(ст.Р корр.)</td>
                             <td class="cell-row-small styled-text">0</td>
@@ -300,7 +433,8 @@
                             <td class="cell-row-small styled-text">24.06.19</td>
                              <td class="styled-text">Лакина К. А.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star"></td>
                             <td class="cell-row-small styled-text">63562</td>
                              <td class="styled-text">0058-Р-СПС.К1</td>
                             <td class="cell-row-small styled-text">0</td>
@@ -311,7 +445,10 @@
                             <td class="cell-row-small styled-text">17.05.19</td>
                              <td class="styled-text">Лакина К. А.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star">
+                                <img src="../icons/star_fav.png" class="fav-star-in-table" alt="">
+                            </td>
                             <td class="cell-row-small styled-text">65753</td>
                              <td class="styled-text">0058-P-КЖ-ОП2.К1</td>
                             <td class="cell-row-small styled-text">1</td>
@@ -322,7 +459,8 @@
                             <td class="cell-row-small styled-text">07.06.19</td>
                              <td class="styled-text">Алимов Д. Р.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star"></td>
                             <td class="cell-row-small styled-text">75085</td>
                              <td class="styled-text">МПТЦ-ИСХ-8501</td>
                             <td class="cell-row-small styled-text">0</td>
@@ -333,7 +471,8 @@
                             <td class="cell-row-small styled-text">25.02.20</td>
                              <td class="styled-text">Гончаров Л. А.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star"></td>
                             <td class="cell-row-small styled-text">65631</td>
                              <td class="styled-text">0058-Р-ПОД-ПОС-л.03</td>
                             <td class="cell-row-small styled-text">0</td>
@@ -344,7 +483,10 @@
                             <td class="cell-row-small styled-text">06.06.19</td>
                              <td class="styled-text">Карлин А. В.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star">
+                                <img src="../icons/star_fav.png" class="fav-star-in-table" alt="">
+                            </td>
                             <td class="cell-row-small styled-text">65614</td>
                              <td class="styled-text">0058-Р-КЖ-ЛС3.К1</td>
                             <td class="cell-row-small styled-text">8</td>
@@ -355,7 +497,10 @@
                             <td class="cell-row-small styled-text">06.06.19</td>
                              <td class="styled-text">Кувшинов А. В.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star">
+                                <img src="../icons/star_fav.png" class="fav-star-in-table" alt="">
+                            </td>
                             <td class="cell-row-small styled-text">65589</td>
                              <td class="styled-text">0058-Р-КЖ-МП2.К1</td>
                             <td class="cell-row-small styled-text">1</td>
@@ -366,7 +511,8 @@
                             <td class="cell-row-small styled-text">06.06.19</td>
                              <td class="styled-text">Алимов Д. Р.</td>
                         </tr>
-                        <tr>
+                        <tr class="table-body-row">
+                            <td class="col-star"></td>
                             <td class="cell-row-small styled-text">40268</td>
                              <td class="styled-text">03.08.16</td>
                             <td class="cell-row-small styled-text">АЗС Лукойл</td>
@@ -382,7 +528,7 @@
                 </table>
             </div>
 
-            <div class="main_content-panel">
+            <div class="main_content-panel visible-panel">
                 <div class="main_content-panel-header">
                     <div class="main_content-panel-header-item">
                         <span class="main_content-panel-header-item-title one">История</span>
